@@ -7,11 +7,11 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 
 ### Lab pipelines
 
-- [cellRanger](master/scRNASeq/cellRanger.md)
+- [cellRanger](scRNASeq/cellRanger.md)
 
-- [Quality Control](master/scRNASeq/qualityControl.md)
+- [Quality Control](scRNASeq/qualityControl.md)
 
-- [AltAnalyze](master/scRNASeq/altAnalyze.md)
+- [AltAnalyze](scRNASeq/altAnalyze.md)
 
-- [Seurat](master/scRNASeq/seurat.md)
+- [Seurat](scRNASeq/seurat.md)
 
