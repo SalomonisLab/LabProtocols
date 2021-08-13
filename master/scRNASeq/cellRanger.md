@@ -19,4 +19,5 @@ memoryLimitGB="128"
 ```
 
 Run cellranger command with user supplied parameters
+
 ```cellranger count --id=$sampleName --transcriptome=$referenceTranscriptomeDir --fastqs=$sampleFastqDirectory --jobmode=$jobModeType --localmem $memoryLimitGB```
