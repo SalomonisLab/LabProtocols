@@ -35,6 +35,6 @@ jobModeType="lsf"
 memoryLimitGB="128"
 ```
 
-4. Run cellranger command with user supplied parameters
+4. Run cellranger command to generate cell feature count with user supplied parameters as described in https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count
 
 ```cellranger count --id=$sampleName --transcriptome=$referenceTranscriptomeDir --fastqs=$sampleFastqDirectory --jobmode=$jobModeType --localmem $memoryLimitGB```
