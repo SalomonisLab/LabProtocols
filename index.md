@@ -6,4 +6,4 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 [Home](README.md)
 
 ### Lab pipelines
-[All](allProtocols.md)
+[All](https://github.com/SalomonisLab/master/allProtocols.md)
