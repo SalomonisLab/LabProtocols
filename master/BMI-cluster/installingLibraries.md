@@ -83,7 +83,6 @@ Solving environment: done
 
 
 
-
 5. To install pip libraries in use pip install
 ```bash
 pip install Biopython
