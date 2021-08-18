@@ -59,7 +59,7 @@ Type no if you do not want conda initialized every time run shell command
 no
 ```
 
-3.activate python environment just created which is called python3
+4. Activate python environment just created which is called python3
 ```bash 
 conda activate python3
 ```
@@ -68,7 +68,7 @@ You should notice that in front of your username there is now the name of the co
 Ex. ```(python3) computerName:~ username$```
 Now you can install any library you would like
 
-4. To install conda libraries in conda use the following command
+5. To install conda libraries in conda use the following command
 ```bash 
 conda install pip
 ```
@@ -83,7 +83,7 @@ Solving environment: done
 
 
 
-5. To install pip libraries in use pip install
+6. To install pip libraries in use pip install
 ```bash
 pip install Biopython
 ```
@@ -102,16 +102,15 @@ Successfully installed Biopython-1.79 numpy-1.21.2
 
 
 
-For running on cluster with latest download follow steps 1 to install
-1. Install miniconda or anaconda
+For running on cluster with latest download follow steps 1 to install conda. 
+
 ```bash 
 bash /data/salomonis2/LabFiles/Katrina/Miniconda3-latest-Linux-x86_64.sh
 ```
-
-2. you need to set proxy_on on command line in order to download conda packages
+You will need to set proxy_on on command line in order to download conda packages
 
 ```bash 
 proxy_on
 ```
 Follow prompts to type in your username and password
-Now you can conda create to create a conda environment and conda install to install libraries as above in steps 3-5
+Now you can conda create to create a conda environment and conda install to install libraries as above in steps 3-6
