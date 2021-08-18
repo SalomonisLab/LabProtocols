@@ -5,12 +5,14 @@ https://www.anaconda.com/products/individual
 https://docs.conda.io/en/latest/miniconda.html
 
 2. Follow instructions for installing
-```bash bash Miniconda3-latest-Linux-x86_64.sh
+```bash 
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 3. Create conda enviornment and set python verison where the name of conda environment is referenced after -–name option and version of python after python=
 
-```bash conda create --name python3 python=3
+```bash 
+conda create --name python3 python=3
 ```
 
 
@@ -27,7 +29,8 @@ Solving environment: done
 
 Proceed ([y]/n)?
 
-```bash y
+```bash 
+y
 ```
 
 
@@ -51,11 +54,13 @@ Do you wish the installer to initialize Miniconda3
 by running conda init? [yes|no]
 [no]
 #type no if you do not want conda initialized every time run shell command
-```bash no
+```bash 
+no
 ```
 
 3.activate python environment just created which is called python3
-```bash conda activate python3
+```bash 
+conda activate python3
 ```
 
 #you should notice that in front of your username there is now the name of the conda environment in parenthesis
@@ -65,7 +70,8 @@ Ex. (python3) computerName:~ username$
 #now you can install any library you would like
 
 4. To install conda libraries in conda use the following command
-```bash conda install pip
+```bash 
+conda install pip
 ```
 #output:
 Collecting package metadata (current_repodata.json): done
@@ -80,7 +86,8 @@ Solving environment: done
 
 
 # to install pip libraries in use pip install
-```bash pip install Biopython
+```bash
+pip install Biopython
 ```
 
 #output:
@@ -103,7 +110,8 @@ For running on cluster with latest download follow steps 1 to install
 
 2. you need to set proxy_on on command line in order to download conda packages
 
-```bash proxy_on
+```bash 
+proxy_on
 ```
 #follow prompts to type in your username and password
 #now you can conda create to create a conda environment and conda install to install libraries as above in steps 3-4
