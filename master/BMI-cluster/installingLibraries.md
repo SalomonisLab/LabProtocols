@@ -84,9 +84,10 @@ conda install pip
 
 Output from command line:
 
-```Collecting package metadata (current_repodata.json): done
+```bash
+Collecting package metadata (current_repodata.json): done
 Solving environment: done
-#All requested packages already installed.
+All requested packages already installed.
 ```
 
 
