@@ -18,7 +18,7 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 
 ## BMI-Cluster
 
--[Installing conda libraries](master/BMI-cluster/installingLibraries.md)
+- [Installing conda libraries](master/BMI-cluster/installingLibraries.md)
 
 
 
