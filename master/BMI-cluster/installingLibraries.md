@@ -6,9 +6,13 @@
 
 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
+Select the operating system you are downloading the conda version from and once downloaded, there should be bash script with format conda-version-os.sh. 
+Run bash on this downloaded script 
 ```bash 
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
+
+2.
 
 3. Create conda enviornment and set python verison where the name of conda environment is referenced after -–name option and version of python after python=
 
