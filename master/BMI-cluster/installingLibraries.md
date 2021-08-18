@@ -73,7 +73,9 @@ conda activate python3
 ```
 
 You should notice that in front of your username there is now the name of the conda environment in parenthesis
-Ex. ```(python3) computerName:~ username$```
+Ex. 
+```(python3) computerName:~ username$
+```
 Now you can install any library you would like
 
 5. To install conda libraries in conda use the following command
@@ -92,6 +94,7 @@ All requested packages already installed.
 
 
 6. To install pip libraries in use pip install
+
 ```bash
 pip install Biopython
 ```
