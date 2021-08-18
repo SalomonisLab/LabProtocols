@@ -86,11 +86,8 @@ Output from command line:
 
 ```Collecting package metadata (current_repodata.json): done
 Solving environment: done
-
 #All requested packages already installed.
 ```
-
-
 
 
 6. To install pip libraries in use pip install
