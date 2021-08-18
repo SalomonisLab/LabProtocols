@@ -6,7 +6,7 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 ### General Information
 [Home](README.md)
 
-### Lab pipelines
+### RNASeq pipelines
 
 - [cellRanger](master/scRNASeq/cellRanger.md)
 
@@ -15,4 +15,10 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 - [AltAnalyze](master/scRNASeq/altAnalyze.md)
 
 - [Seurat](master/scRNASeq/seurat.md)
+
+## BMI-Cluster
+
+-[Installing conda libraries](master/BMI-cluster/installingLibraries.md)
+
+
 
