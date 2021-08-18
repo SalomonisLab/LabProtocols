@@ -15,9 +15,8 @@ bash Miniconda3-latest-Linux-x86_64.sh
 conda create --name python3 python=3
 ```
 
-```
 Output from command line:
-
+```
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
@@ -67,19 +66,18 @@ conda activate python3
 
 You should notice that in front of your username there is now the name of the conda environment in parenthesis
 Ex. ```(python3) computerName:~ username$```
-
-
 Now you can install any library you would like
 
 4. To install conda libraries in conda use the following command
 ```bash 
 conda install pip
 ```
-#output:
+
+Output from command line:
 ```Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
-# All requested packages already installed.
+#All requested packages already installed.
 ```
 
 
@@ -90,8 +88,9 @@ Solving environment: done
 ```bash
 pip install Biopython
 ```
+
+Output from command line:
 ```
-#output:
 Collecting Biopython
   Downloading biopython-1.79-cp39-cp39-macosx_10_9_x86_64.whl (2.3 MB)
      |████████████████████████████████| 2.3 MB 2.5 MB/s
@@ -107,7 +106,7 @@ Successfully installed Biopython-1.79 numpy-1.21.2
 For running on cluster with latest download follow steps 1 to install
 1. Install miniconda or anaconda
 ```bash 
-bash/data/salomonis2/LabFiles/Katrina/Miniconda3-latest-Linux-x86_64.sh
+bash /data/salomonis2/LabFiles/Katrina/Miniconda3-latest-Linux-x86_64.sh
 ```
 
 2. you need to set proxy_on on command line in order to download conda packages
