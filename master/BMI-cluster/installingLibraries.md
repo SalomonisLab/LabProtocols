@@ -1,10 +1,11 @@
 
 
-1. install anaconda or miniconda depending on if you want the full version of conda or mini version from main website
+1. Install anaconda or miniconda depending on if you want the full version of conda or mini version from main website
+
 https://www.anaconda.com/products/individual
+
 https://docs.conda.io/en/latest/miniconda.html
 
-2. Follow instructions for installing
 ```bash 
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
