@@ -21,6 +21,7 @@ conda create --name python3 python=3
 ```
 
 Output from command line:
+
 ```
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
@@ -40,6 +41,7 @@ y
 
 
 Output from command line:
+
 ```
 Preparing transaction: done
 Verifying transaction: done
@@ -65,6 +67,7 @@ no
 ```
 
 4. Activate python environment just created which is called python3
+
 ```bash 
 conda activate python3
 ```
@@ -74,11 +77,13 @@ Ex. ```(python3) computerName:~ username$```
 Now you can install any library you would like
 
 5. To install conda libraries in conda use the following command
+
 ```bash 
 conda install pip
 ```
 
 Output from command line:
+
 ```Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
@@ -94,6 +99,7 @@ pip install Biopython
 ```
 
 Output from command line:
+
 ```
 Collecting Biopython
   Downloading biopython-1.79-cp39-cp39-macosx_10_9_x86_64.whl (2.3 MB)
