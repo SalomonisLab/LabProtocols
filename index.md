@@ -1,5 +1,4 @@
-## Project information
-Salomonis Lab Protocols:
+## Salomonis Lab
 
 An internal resource explaining and documenting RNASeq and bioninformatics pipelines
 
