@@ -62,7 +62,6 @@ mkdir newDirName
 
 
     bash IronThroneParGNULinux.sh  --run circ --config circular_SRSF2.config --fastqR1 SRSF2cir34_R1.fq --fastqR2 SRSF2cir34_R2.fq --sample $sampleName --outdir $outputDir --umilen $10xChemistry -t $numThreads -v $verboseMode --whitelist $whiteListFile
-
     ```
 
     f. Modified UMI script based on OS from: https://github.com/landau-lab/IronThrone-GoT/tree/master/Parallelized_UMI_Collapse
