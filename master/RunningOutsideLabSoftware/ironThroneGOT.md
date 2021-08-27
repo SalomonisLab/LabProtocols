@@ -18,7 +18,6 @@ mkdir newDirName
     ```
         mkdir barcodes10x
         mv barcodesFile.txt barcodes10x
-
     ```
 
   b. updated config file
@@ -31,7 +30,7 @@ mkdir newDirName
 
   e. run_GOT.sh : custom bash script to run IronThrone on cluster with example below:
 
-    ```
+```
     #BSUB -L /bin/bash
     #BSUB -W 60:00
     #BSUB -n 8
@@ -63,6 +62,7 @@ mkdir newDirName
 
 
     bash IronThroneParGNULinux.sh  --run circ --config circular_SRSF2.config --fastqR1 SRSF2cir34_R1.fq --fastqR2 SRSF2cir34_R2.fq --sample $sampleName --outdir $outputDir --umilen $10xChemistry -t $numThreads -v $verboseMode --whitelist $whiteListFile
+
     ```
 
     f. Modified UMI script based on OS from: https://github.com/landau-lab/IronThrone-GoT/tree/master/Parallelized_UMI_Collapse
