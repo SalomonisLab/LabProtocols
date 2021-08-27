@@ -21,9 +21,6 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 
 
 
-## Software outside the Lab 
+## Software outside the Lab
 
-- [IronThrone-GOT](master/runningOutsideLabSoftware/ironThroneGOT.md)
-
-
-
+- [IronThrone-GOT](master/RunningOutsideLabSoftware/ironThroneGOT.md)
