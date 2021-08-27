@@ -12,13 +12,16 @@ Here are steps to run/modify existing scripts:
 
   a. barcodes10x directory with barcodes file in directory (https://github.com/landau-lab/IronThrone-GoT/tree/master/barcodes10X
     )
+
     ```mkdir barcodes10x
         mv barcodesFile.txt barcodes10x```
 
   b. updated config file
       8 lines for circular RNASeq (circ.config)
       4 lines for linear RNASeq (lin.config)
+
   c. Both read files unzipped (r1.fq and r2.fq)
+
   d. IronThrone-GoT perl script located at: https://github.com/landau-lab/IronThrone-GoT/blob/master/IronThrone-GoT
 
   e. run_GOT.sh : custom bash script to run IronThrone on cluster with example below:
@@ -55,40 +58,40 @@ Here are steps to run/modify existing scripts:
 
 
     bash IronThroneParGNULinux.sh  --run circ --config circular_SRSF2.config --fastqR1 SRSF2cir34_R1.fq --fastqR2 SRSF2cir34_R2.fq --sample $sampleName --outdir $outputDir --umilen $10xChemistry -t $numThreads -v $verboseMode --whitelist $whiteListFile
-
     ```
+
     f. Modified UMI script based on OS from: https://github.com/landau-lab/IronThrone-GoT/tree/master/Parallelized_UMI_Collapse
       For running on cluster, we used Linux script https://github.com/landau-lab/IronThrone-GoT/blob/master/Parallelized_UMI_Collapse/IronThroneParGNULinux.sh
 
       where above this line of code:
-      ```
-      Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
 
       ```
+      Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
+      ```
+
       we add the following line of code:
 
       ```
       main_output_folder="newDirName/Output"
-      where newDirName is where all scripts/data are stored for this IronThrone GOT run; directory created from step 1
+      #where newDirName is where all scripts/data are stored for this #IronThrone GOT run; directory created from step 1
 
-        ```
-        main_output_folder="newDirName/Output"
+      main_output_folder="newDirName/Output"
 
-        Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
-        ```
+      Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
+      ```
 
 
     g. Modified Combine_IronThrone_Parallel_Output.R where the following code is changed from:
 
 
 
-```
-split_got <- data.frame()
-for (i in list.files()){
-    split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
-}
+    ```
+      split_got <- data.frame()
+      for (i in list.files()){
+        split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
+      }
 
-```
+      ```
 
 updated code:
 
