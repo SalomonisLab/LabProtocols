@@ -6,15 +6,20 @@ Here are steps to run/modify existing scripts:
 
 1. Create new directory
 
-```mkdir newDirName```
+```
+mkdir newDirName
+```
 
 2. Store the following in your new directory:
 
   a. barcodes10x directory with barcodes file in directory (https://github.com/landau-lab/IronThrone-GoT/tree/master/barcodes10X
     )
 
-    ```mkdir barcodes10x
-        mv barcodesFile.txt barcodes10x```
+    ```
+        mkdir barcodes10x
+        mv barcodesFile.txt barcodes10x
+
+    ```
 
   b. updated config file
       8 lines for circular RNASeq (circ.config)
@@ -85,12 +90,11 @@ Here are steps to run/modify existing scripts:
 
 
 
-    ```
+      ```
       split_got <- data.frame()
       for (i in list.files()){
         split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
       }
-
       ```
 
 updated code:
