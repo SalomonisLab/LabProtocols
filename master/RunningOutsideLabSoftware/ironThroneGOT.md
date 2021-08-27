@@ -84,8 +84,6 @@ mkdir newDirName
       main_output_folder="newDirName/Output"
       #where newDirName is where all scripts/data are stored for this #IronThrone GOT run; directory created from step 1
 
-      main_output_folder="newDirName/Output"
-
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
       ```
 
