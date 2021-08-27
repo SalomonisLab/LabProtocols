@@ -6,7 +6,7 @@ Here are steps to run/modify existing scripts:
 
 1. Create new directory
 
-```
+```bash
 mkdir newDirName
 ```
 
@@ -15,7 +15,7 @@ mkdir newDirName
   a. barcodes10x directory with barcodes file in directory (https://github.com/landau-lab/IronThrone-GoT/tree/master/barcodes10X
     )
 
-    ```
+    ```bash
         mkdir barcodes10x
         mv barcodesFile.txt barcodes10x
     ```
@@ -30,7 +30,7 @@ mkdir newDirName
 
   e. run_GOT.sh : custom bash script to run IronThrone on cluster with example below:
 
-```
+```bash
     #BSUB -L /bin/bash
     #BSUB -W 60:00
     #BSUB -n 8
@@ -69,13 +69,13 @@ mkdir newDirName
 
       where above this line of code:
 
-      ```
+      ```bash
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
       ```
 
       we add the following line of code:
 
-      ```
+      ```bash
       main_output_folder="newDirName/Output"
       #where newDirName is where all scripts/data are stored for this #IronThrone GOT run; directory created from step 1
 
@@ -89,7 +89,7 @@ mkdir newDirName
 
 
 
-      ```
+      ```Rscript
       split_got <- data.frame()
       for (i in list.files()){
         split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
@@ -98,7 +98,7 @@ mkdir newDirName
 
 updated code:
 
-```
+```Rscript
 outputDir="newDirName"
 #outputDir is the full directory to newDirName with Output added to end of file path name
 #i.e. newDirName/Output
