@@ -12,3 +12,4 @@
 
 - [Seurat](scRNASeq/seurat.md)
 
+- [Software outside Lab](runningOutsideLabSoftware/allSoftware.md)
