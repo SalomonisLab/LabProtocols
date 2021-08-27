@@ -7,7 +7,9 @@ Here are steps to run/modify existing scripts:
 1. Create new directory
 
 ```bash
+
 mkdir newDirName
+
 ```
 
 2. Store the following in your new directory:
@@ -16,8 +18,10 @@ mkdir newDirName
     )
 
     ```bash
+
         mkdir barcodes10x
         mv barcodesFile.txt barcodes10x
+
     ```
 
   b. updated config file
@@ -62,6 +66,7 @@ mkdir newDirName
 
 
     bash IronThroneParGNULinux.sh  --run circ --config circular_SRSF2.config --fastqR1 SRSF2cir34_R1.fq --fastqR2 SRSF2cir34_R2.fq --sample $sampleName --outdir $outputDir --umilen $10xChemistry -t $numThreads -v $verboseMode --whitelist $whiteListFile
+
     ```
 
     f. Modified UMI script based on OS from: https://github.com/landau-lab/IronThrone-GoT/tree/master/Parallelized_UMI_Collapse
@@ -71,6 +76,7 @@ mkdir newDirName
 
       ```bash
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
+
       ```
 
       we add the following line of code:
@@ -82,6 +88,7 @@ mkdir newDirName
       main_output_folder="newDirName/Output"
 
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
+
       ```
 
 
@@ -89,16 +96,17 @@ mkdir newDirName
 
 
 
-      ```Rscript
+    ```{r}
       split_got <- data.frame()
       for (i in list.files()){
         split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
       }
-      ```
+
+    ```
 
 updated code:
 
-```Rscript
+```{r}
 outputDir="newDirName"
 #outputDir is the full directory to newDirName with Output added to end of file path name
 #i.e. newDirName/Output
@@ -110,6 +118,7 @@ split_got <- data.frame()
 for (i in list.files(full.names = TRUE, path=outputDir)){
     split_got <- rbind(split_got, read.delim(paste0(i, sumTableName), stringsAsFactors = FALSE))
 }
+
 ```
 
 
