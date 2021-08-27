@@ -111,7 +111,7 @@ sumTableName="sampleNameUsed.summTable.txt"
 
 split_got <- data.frame()
 for (i in list.files(full.names = TRUE, path=outputDir)){
-    split_got <- rbind(split_got, read.delim(paste0(i, sumTableName), stringsAsFactors = FALSE))
+    split_got <- rbind(split_got, read.delim(paste0(i, ".\" , sumTableName), stringsAsFactors = FALSE))
 }
 ```
 
