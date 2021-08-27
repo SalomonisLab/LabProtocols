@@ -20,13 +20,13 @@ mkdir newDirName
     ```bash
         mkdir barcodes10x
         mv barcodesFile.txt barcodes10x
-    ```
+```
 
 
+  b. updated config file:
 
-  b. updated config file
       8 lines for circular RNASeq (circ.config)
-      4 lines for linear RNASeq (lin.config)
+      4 lines for linear RNASeq (linear.config)
 
   c. Both read files unzipped (r1.fq and r2.fq)
 
@@ -66,8 +66,7 @@ mkdir newDirName
 
 
     bash IronThroneParGNULinux.sh  --run circ --config circular_SRSF2.config --fastqR1 SRSF2cir34_R1.fq --fastqR2 SRSF2cir34_R2.fq --sample $sampleName --outdir $outputDir --umilen $10xChemistry -t $numThreads -v $verboseMode --whitelist $whiteListFile
-    ```
-
+```
 
     f. Modified UMI script based on OS from: https://github.com/landau-lab/IronThrone-GoT/tree/master/Parallelized_UMI_Collapse
       For running on cluster, we used Linux script https://github.com/landau-lab/IronThrone-GoT/blob/master/Parallelized_UMI_Collapse/IronThroneParGNULinux.sh
@@ -75,8 +74,7 @@ mkdir newDirName
       where above this line of code:
       ```bash
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
-      ```
-
+```
 
 
       we add the following line of code:
@@ -89,25 +87,23 @@ mkdir newDirName
       main_output_folder="newDirName/Output"
 
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
-      ```
-
+```
 
 
     g. Modified Combine_IronThrone_Parallel_Output.R where the following code is changed from:
 
 
-    ```{r}
+    ```R
       split_got <- data.frame()
       for (i in list.files()){
         split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
       }
-    ```
-
+```
 
 updated code:
 
 
-```{r}
+```R
 outputDir="newDirName"
 #outputDir is the full directory to newDirName with Output added to end of file path name
 #i.e. newDirName/Output
@@ -120,7 +116,6 @@ for (i in list.files(full.names = TRUE, path=outputDir)){
     split_got <- rbind(split_got, read.delim(paste0(i, sumTableName), stringsAsFactors = FALSE))
 }
 ```
-
 
 
 3. Submit job via bsub < run_GOT.sh
