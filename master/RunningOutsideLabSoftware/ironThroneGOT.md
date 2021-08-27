@@ -74,7 +74,7 @@ mkdir newDirName
       where above this line of code:
       ```bash
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
-```
+      ```
 
 
       we add the following line of code:
@@ -87,18 +87,18 @@ mkdir newDirName
       main_output_folder="newDirName/Output"
 
       Rscript Combine_IronThrone_Parallel_Output.R $main_output_folder ${pcr_read_threshold} ${levenshtein_distance} ${dupcut}
-```
+      ```
 
 
     g. Modified Combine_IronThrone_Parallel_Output.R where the following code is changed from:
 
 
-    ```R
+      ```R
       split_got <- data.frame()
       for (i in list.files()){
         split_got <- rbind(split_got, read.delim(paste0(i,"/myGoT.summTable.txt"), stringsAsFactors = FALSE))
       }
-```
+      ```
 
 updated code:
 
