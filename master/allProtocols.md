@@ -13,4 +13,4 @@
 - [Seurat](scRNASeq/seurat.md)
 
 
-- [Software outside Lab](runningOutsideLabSoftware/ironThroneGOT.md)
+- [Software outside Lab](RunningOutsideLabSoftware/ironThroneGOT.md)
