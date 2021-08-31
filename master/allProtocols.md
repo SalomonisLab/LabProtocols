@@ -1,16 +1,19 @@
 
 
-### Single-cellRNASeq
+### Single-cellRNASeq workflow
 
-- [cellRanger](scRNASeq/cellRanger.md)
+1.[Quality Control](scRNASeq/qualityControl.md)
 
-- [Quality Control](scRNASeq/qualityControl.md)
+2.[cellRanger](scRNASeq/cellRanger.md)
 
-- [SoupX](scRNASeq/soupx.md)
+  - [SoupX](scRNASeq/soupx.md)
 
-- [AltAnalyze](scRNASeq/altAnalyze.md)
+3.[AltAnalyze](scRNASeq/altAnalyzeTableOfContents.md)
 
-- [Seurat](scRNASeq/seurat.md)
+4.[Seurat](scRNASeq/seurat.md)
 
+
+
+### Genotyping via amplicon sequencing
 
 - [Software outside Lab](RunningOutsideLabSoftware/ironThroneGOT.md)
