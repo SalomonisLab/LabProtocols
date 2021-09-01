@@ -2,6 +2,6 @@
 
 # AltAnalyze workflows
 
-- [Running altAnalyze](altAnalyzeGeneralRun.md)
+- [Running altAnalyze](scRNASeq/altAnalyzeGeneralRun.md)
 
-- [Subclustering altAnalyze results](subClusterAnalysis.md)
+- [Subclustering altAnalyze results](scRNASeq/subClusterAnalysis.md)
