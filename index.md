@@ -11,7 +11,7 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 
 - [Quality Control](master/scRNASeq/qualityControl.md)
 
-- [AltAnalyze](master/scRNASeq/altAnalyzeTableOfContents.md)
+- [AltAnalyze](master/scRNASeq/altAnalyze/altAnalyzeTableOfContents.md)
 
 - [Seurat](master/scRNASeq/seurat.md)
 
