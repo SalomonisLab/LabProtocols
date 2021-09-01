@@ -5,13 +5,17 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 ### General Information
 [Home](README.md)
 
-### RNASeq pipelines
+### scRNASeq pipelines
 
-- [cellRanger](master/scRNASeq/cellRanger.md)
+CellRanger
+- [General CellRanger run](master/scRNASeq/cellRanger.md)
 
 - [Quality Control](master/scRNASeq/qualityControl.md)
 
-- [AltAnalyze](master/scRNASeq/tableOfContents.md)
+## AltAnalyze
+
+  - [Running altAnalyze](master/scRNASeq/altAnalyzeGeneralRun.md)
+  - [Subclustering altAnalyze results](master/scRNASeq/altAnalyzeSubClustering.md)
 
 - [Seurat](master/scRNASeq/seurat.md)
 
