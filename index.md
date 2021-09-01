@@ -7,16 +7,18 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 
 ### scRNASeq pipelines
 
-CellRanger
-- [General CellRanger run](master/scRNASeq/cellRanger.md)
-
+1.
 - [Quality Control](master/scRNASeq/qualityControl.md)
 
+2.
+- [Cell Ranger](master/scRNASeq/cellRanger.md)
 
+3.
 - [AltAnalyze](master/scRNASeq/tableOfContents.md)
 
-
+4.
 - [Seurat](master/scRNASeq/seurat.md)
+
 
 ## BMI-Cluster
 
