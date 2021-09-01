@@ -12,10 +12,9 @@ CellRanger
 
 - [Quality Control](master/scRNASeq/qualityControl.md)
 
-## AltAnalyze
 
-  - [Running altAnalyze](master/scRNASeq/altAnalyzeGeneralRun.md)
-  - [Subclustering altAnalyze results](master/scRNASeq/altAnalyzeSubClustering.md)
+- [AltAnalyze](master/scRNASeq/tableOfContents.md)
+
 
 - [Seurat](master/scRNASeq/seurat.md)
 
