@@ -24,7 +24,7 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 
 - [Installing conda libraries](master/BMI-cluster/installingLibraries.md)
 
-
+- [Checking wall time hours usage](master/BMI-cluster/wallTime.md)
 
 ## Software outside the Lab
 
