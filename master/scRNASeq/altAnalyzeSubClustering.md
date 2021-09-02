@@ -8,6 +8,7 @@ These steps will show you how to run altAnalyze on just one cluster for sub-clus
 2. Cut that cluster from FinalGroups.txt file in the ICGS-NMF* directory of interest in excel or using the awk command listed below
 i.e.
 
+
 ```bash
 
 finalGroupFile="/data/salomonis2/LabFiles/Katrina/activeCollabs/Schuh_Rhesus/results/newMergedNo405/ICGS-NMF_cosine_cc/FinalGroups.txt"
@@ -19,6 +20,7 @@ awk '$3 == $colOfInterst { print }' $finalGroupFile > $outFile
 ```
 
 3. Get location of the exp.sampleName.txt in ExpressionInput directory
+
 ```bash
 
 ../ExpressionInput/exp.sameName.txt
@@ -26,6 +28,7 @@ awk '$3 == $colOfInterst { print }' $finalGroupFile > $outFile
 ```
 
 4. Generate filtered exp file via sampleIndexSelection.py script from altAnalyze
+
 ```bash
 #where merged_kidney = samplename
 expFile="/ExpressionInput/exp.merged_kidney.txt"
@@ -36,15 +39,18 @@ python /AltAnalyze-100/import_scripts/sampleIndexSelection.py --i $expFile --f $
 ```
 
 5. move new filtered file from ExpressionInput folder to new directory
+
 ```bash
 
 mv /ExpressionInput/exp.merged_kidney-filtered.txt $newDirName
+
 ```
 
 
 6. Run altanalyze on new exp filtered file with different variations of clustering
 
 ```bash
+
 expFile="/c29_filtered/exp.merged_kidney-filtered.txt"
 outputDir="/c29_filtered"
 expName="merged_c29"
