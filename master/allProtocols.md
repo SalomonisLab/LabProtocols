@@ -8,9 +8,12 @@
 
   - [SoupX](master/scRNASeq/soupx.md)
 
-3.[AltAnalyze](master/scRNASeq/tableOfContents.md)
+3. Multimodal mode      
+  - [scRNASeq/ADT](master/Multimodal/multipipeline.md)
 
-4.[Seurat](master/scRNASeq/seurat.md)
+4.[AltAnalyze](master/scRNASeq/tableOfContents.md)
+
+5.[Seurat](master/scRNASeq/seurat.md)
 
 
 
