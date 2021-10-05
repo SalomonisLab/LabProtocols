@@ -25,6 +25,9 @@ bcl2fastq/2.20.0
 Feature ref CSV format: https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/using/feature-bc-analysis#feature-ref
 
 Creating a cellranger reference transcriptome: https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references
+cellranger mkref --genome=output_genome --fasta=input.fa --genes=input.gtf
+
+
 
 featue-ref:
 for determining the read and pattern, review https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/using/feature-bc-analysis#feature-ref and determine based on what TotalSeq assay was used for Antibody capture.
