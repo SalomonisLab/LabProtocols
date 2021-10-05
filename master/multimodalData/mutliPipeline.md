@@ -33,7 +33,7 @@ Options are:
 - TotalSeq™-B
 - TotalSeq™-C
 - CRISPR Guide Capture
-
+*
 
 ICGS2(AltAnalyze) pipeline:
 
