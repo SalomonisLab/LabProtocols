@@ -9,7 +9,7 @@
   - [SoupX](master/scRNASeq/soupx.md)
 
 3. Multimodal mode      
-  - [scRNASeq/ADT](master/MultimodalData/multiPipeline.md)
+  - [scRNASeq/ADT](master/multimodalData/multiPipeline.md)
 
 4.[AltAnalyze](master/scRNASeq/tableOfContents.md)
 
