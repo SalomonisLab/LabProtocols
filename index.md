@@ -13,10 +13,13 @@ An internal resource explaining and documenting RNASeq and bioninformatics pipel
 2.
 - [Cell Ranger](master/scRNASeq/cellRanger.md)
 
-3.
-- [AltAnalyze](master/scRNASeq/tableOfContents.md)
+3. Multimodal mode      
+  - [scRNASeq/ADT analysis](master/Multimodal/multipipeline.md)
 
 4.
+- [AltAnalyze](master/scRNASeq/tableOfContents.md)
+
+5.
 - [Seurat](master/scRNASeq/seurat.md)
 
 
